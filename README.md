@@ -1,2 +1,2 @@
-# Love & Dread (Advanced)
-This is the full interactive version of the game with room logic and character powers.
+# Love & Dread (Preview Build)
+A 61% completed version of the game for early testing.
