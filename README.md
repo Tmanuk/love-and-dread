@@ -1,2 +1,2 @@
-# Love & Dread (Preview 78%)
-This is a 78% build preview version of the game with intro logic and text effects.
+# Love & Dread (Preview 85%)
+This version includes the character selection screen with portrait images and basic selection logic.

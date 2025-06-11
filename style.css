@@ -4,11 +4,22 @@ body {
   color: #f8f8f8;
   font-family: 'Georgia', serif;
   text-align: center;
-  padding-top: 100px;
 }
-.fade-text {
-  opacity: 0;
-  transition: opacity 3s ease-in;
-  font-size: 1.5em;
-  margin-bottom: 30px;
+h1, h2 {
+  margin-top: 20px;
+}
+.character {
+  display: inline-block;
+  margin: 15px;
+  cursor: pointer;
+}
+.character img {
+  width: 150px;
+  height: 150px;
+  border-radius: 8px;
+  border: 2px solid #f8f8f8;
+}
+.character p {
+  margin-top: 10px;
+  font-size: 1.2em;
 }
