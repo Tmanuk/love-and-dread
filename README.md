@@ -1,2 +1,2 @@
-# Love & Dread (Preview 92%)
-This version includes real portrait references and character lock-in logic for synced player selection.
+# Love & Dread (Preview 95%)
+This preview adds mobile character selection with early cinematic-style layout and placeholder images.

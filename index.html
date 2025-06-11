@@ -2,25 +2,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Love & Dread - Host</title>
+  <title>Love & Dread - Character Selection</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <script>
-    const selectedCharacters = {};
+    let selected = false;
     function selectCharacter(name) {
-      if (selectedCharacters[name]) {
+      if (selected) return;
+      const element = document.getElementById(name.replace(" ", "_"));
+      if (element.classList.contains("locked")) {
         alert(name + " is already taken.");
         return;
       }
-      selectedCharacters[name] = true;
-      const slot = document.getElementById(name.replace(" ", "_"));
-      slot.classList.add("locked");
-      slot.querySelector(".status").textContent = "Selected";
+      selected = true;
+      element.classList.add("selected");
+      element.querySelector(".status").textContent = "You";
     }
   </script>
 </head>
 <body>
-  <h1>Love & Dread: Escape the Mansion</h1>
-  <div id="character-select">
+  <h1>Select Your Character</h1>
+  <div id="characters">
     <div class="character" id="Mr._Todd" onclick="selectCharacter('Mr. Todd')">
       <img src="mr-todd.jpg"><p>Mr. Todd</p><p class="status">Available</p>
     </div>
