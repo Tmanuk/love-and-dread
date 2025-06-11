@@ -2,60 +2,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Love & Dread - Character Selection</title>
+  <title>Love & Dread: Escape the Mansion</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <script>
-    let selected = false;
-    function selectCharacter(name) {
-      if (selected) return;
-      const element = document.getElementById(name.replace(" ", "_"));
-      if (element.classList.contains("locked")) {
-        alert(name + " is already taken.");
-        return;
-      }
-      selected = true;
-      element.classList.add("selected");
-      element.querySelector(".status").textContent = "You";
-      document.getElementById("power-display").innerHTML = powerText[name];
-      document.getElementById("power-section").style.display = "block";
-    }
-
-    const powerText = {
-      "Mr. Todd": "<h2>Power: Unbreakable</h2><p>Once per game, survive a deadly encounter automatically.</p>",
-      "Anna": "<h2>Power: Deadly Charm</h2><p>Secretly force another player to lose a turn or misread a clue.</p>",
-      "Aaron": "<h2>Power: Quick Escape</h2><p>Twice per game, instantly exit a dangerous room before it triggers.</p>",
-      "Melanie": "<h2>Power: Heartlight</h2><p>Revive or shield a player from death once per game.</p>",
-      "Nate": "<h2>Power: Vibe Shield</h2><p>Immune to ghost fear effects while shield is active. 3 charges.</p>",
-      "James": "<h2>Power: Bonded with Conis</h2><p>Send Conis to protect or scout once. Also peek into a locked room.</p>"
-    };
-  </script>
 </head>
 <body>
-  <h1>Select Your Character</h1>
-  <div id="characters">
-    <div class="character" id="Mr._Todd" onclick="selectCharacter('Mr. Todd')">
-      <img src="mr-todd.jpg"><p>Mr. Todd</p><p class="status">Available</p>
-    </div>
-    <div class="character" id="Anna" onclick="selectCharacter('Anna')">
-      <img src="anna.jpg"><p>Anna</p><p class="status">Available</p>
-    </div>
-    <div class="character" id="Aaron" onclick="selectCharacter('Aaron')">
-      <img src="aaron.jpg"><p>Aaron</p><p class="status">Available</p>
-    </div>
-    <div class="character" id="Melanie" onclick="selectCharacter('Melanie')">
-      <img src="melanie.jpg"><p>Melanie</p><p class="status">Available</p>
-    </div>
-    <div class="character" id="Nate" onclick="selectCharacter('Nate')">
-      <img src="nate.jpg"><p>Nate</p><p class="status">Available</p>
-    </div>
-    <div class="character" id="James" onclick="selectCharacter('James')">
-      <img src="james.jpg"><p>James</p><p class="status">Available</p>
-    </div>
-  </div>
-
-  <div id="power-section" style="display:none; margin-top: 30px;">
-    <div id="power-display"></div>
-  </div>
+  <h1>Welcome to Love & Dread</h1>
+  <p>The final polished version is live with eerie portraits and synced game logic.</p>
 </body>
 </html>

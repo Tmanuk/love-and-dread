@@ -1,2 +1,3 @@
-# Love & Dread (Preview 98%)
-This version includes real character selection and powers shown per player.
+# Love & Dread (Polished Version)
+
+This is the final, fully playable release of *Love & Dread: Escape the Mansion*.
