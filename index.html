@@ -2,14 +2,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Love & Dread: Host Screen</title>
+  <title>Love & Dread - Host</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <h1>Love & Dread: Escape the Mansion</h1>
-  <p>Select your players and guide them through the eerie rooms.</p>
-  <div id="room-event"></div>
-  <button onclick="nextRoom()">Reveal Next Room</button>
-  <script src="script.js"></script>
+  <div id="intro">
+    <p class="fade-text">It was supposed to be just a stop...</p>
+    <p class="fade-text">But this house—it doesn’t shelter.</p>
+    <p class="fade-text">It studies. It waits. It feeds on secrets...</p>
+    <p class="fade-text">Only one truth remains: If you want to leave…</p>
+    <p class="fade-text">You’ll have to give the house something it wants more than your life.</p>
+  </div>
+  <audio id="voiceover" autoplay>
+    <source src="intro-voiceover.mp3" type="audio/mp3">
+  </audio>
+  <script>
+    const textElements = document.querySelectorAll('.fade-text');
+    let index = 0;
+    function showNextLine() {
+      if (index < textElements.length) {
+        textElements[index].style.opacity = 1;
+        index++;
+        setTimeout(showNextLine, 4000);
+      }
+    }
+    window.onload = () => {
+      showNextLine();
+    };
+  </script>
 </body>
 </html>
