@@ -1,2 +1,2 @@
-# Love & Dread
-This is the full working version of the escape-the-mansion game.
+# Love & Dread (Advanced)
+This is the full interactive version of the game with room logic and character powers.

@@ -2,14 +2,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Love & Dread: Player Screen</title>
+  <title>Love & Dread: Player</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h2>Your Character Dashboard</h2>
-  <p>Roll your die, track emotions, and use your powers.</p>
+  <h2>Your Character Panel</h2>
+  <p>Emotion: <span id="emotion">Calm</span></p>
   <button onclick="rollDie()">Roll Die</button>
   <p id="result"></p>
+  <button onclick="usePower()">Use Power</button>
+  <p id="power-result"></p>
   <script src="script.js"></script>
 </body>
 </html>
