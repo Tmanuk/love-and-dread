@@ -5,21 +5,31 @@ body {
   font-family: 'Georgia', serif;
   text-align: center;
 }
-h1, h2 {
-  margin-top: 20px;
+#character-select {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
 }
 .character {
-  display: inline-block;
-  margin: 15px;
+  border: 2px solid #f8f8f8;
+  margin: 10px;
+  padding: 10px;
+  width: 160px;
   cursor: pointer;
+  transition: 0.3s;
+}
+.character.locked {
+  opacity: 0.4;
+  cursor: not-allowed;
 }
 .character img {
-  width: 150px;
-  height: 150px;
+  width: 100%;
+  height: auto;
   border-radius: 8px;
-  border: 2px solid #f8f8f8;
 }
-.character p {
-  margin-top: 10px;
-  font-size: 1.2em;
+.status {
+  font-style: italic;
+  font-size: 0.9em;
+  margin-top: 5px;
 }

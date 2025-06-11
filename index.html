@@ -4,23 +4,41 @@
 <head>
   <title>Love & Dread - Host</title>
   <link rel="stylesheet" href="style.css">
+  <script>
+    const selectedCharacters = {};
+    function selectCharacter(name) {
+      if (selectedCharacters[name]) {
+        alert(name + " is already taken.");
+        return;
+      }
+      selectedCharacters[name] = true;
+      const slot = document.getElementById(name.replace(" ", "_"));
+      slot.classList.add("locked");
+      slot.querySelector(".status").textContent = "Selected";
+    }
+  </script>
 </head>
 <body>
   <h1>Love & Dread: Escape the Mansion</h1>
   <div id="character-select">
-    <h2>Select Your Character</h2>
-    <div class="character" onclick="selectCharacter('Mr. Todd')"><img src="mr-todd.jpg"><p>Mr. Todd</p></div>
-    <div class="character" onclick="selectCharacter('Anna')"><img src="anna.jpg"><p>Anna</p></div>
-    <div class="character" onclick="selectCharacter('Aaron')"><img src="aaron.jpg"><p>Aaron</p></div>
-    <div class="character" onclick="selectCharacter('Melanie')"><img src="melanie.jpg"><p>Melanie</p></div>
-    <div class="character" onclick="selectCharacter('Nate')"><img src="nate.jpg"><p>Nate</p></div>
-    <div class="character" onclick="selectCharacter('James')"><img src="james.jpg"><p>James</p></div>
+    <div class="character" id="Mr._Todd" onclick="selectCharacter('Mr. Todd')">
+      <img src="mr-todd.jpg"><p>Mr. Todd</p><p class="status">Available</p>
+    </div>
+    <div class="character" id="Anna" onclick="selectCharacter('Anna')">
+      <img src="anna.jpg"><p>Anna</p><p class="status">Available</p>
+    </div>
+    <div class="character" id="Aaron" onclick="selectCharacter('Aaron')">
+      <img src="aaron.jpg"><p>Aaron</p><p class="status">Available</p>
+    </div>
+    <div class="character" id="Melanie" onclick="selectCharacter('Melanie')">
+      <img src="melanie.jpg"><p>Melanie</p><p class="status">Available</p>
+    </div>
+    <div class="character" id="Nate" onclick="selectCharacter('Nate')">
+      <img src="nate.jpg"><p>Nate</p><p class="status">Available</p>
+    </div>
+    <div class="character" id="James" onclick="selectCharacter('James')">
+      <img src="james.jpg"><p>James</p><p class="status">Available</p>
+    </div>
   </div>
-  <p id="selected-output"></p>
-  <script>
-    function selectCharacter(name) {
-      document.getElementById("selected-output").textContent = name + " has been selected.";
-    }
-  </script>
 </body>
 </html>
