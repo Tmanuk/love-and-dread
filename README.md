@@ -1,9 +1,8 @@
-# Love & Dread: Escape the Mansion (Final Version)
+# Love & Dread: Escape the Mansion — Final Polished Build
 
-This build includes:
-- Character selection
-- Eerie portraits
-- Background music
-- Final survivor logic
-- Real-time syncing
-- Cinematic room transitions
+- Character selection with eerie portraits
+- Cinematic intro with fading text
+- Powers displayed on character selection
+- One player survives; others perish
+- Mobile-friendly and TV-hostable
+- Synced room descriptions, music (optional), and death logic

@@ -1,16 +1,28 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Love & Dread: Escape the Mansion</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="game.js"></script>
 </head>
 <body>
-  <h1>Welcome to Love & Dread</h1>
-  <p>Choose your character and prepare to face the mansion...</p>
-  <div id="game"></div>
+  <div id="intro" class="screen">
+    <h1>Love & Dread</h1>
+    <p class="fade-text">One mansion. One survivor. Let the dread begin...</p>
+  </div>
+  <div id="character-select" class="screen hidden">
+    <h2>Select Your Character</h2>
+    <div id="characters"></div>
+  </div>
+  <div id="game-screen" class="screen hidden">
+    <h2 id="room-title">Room</h2>
+    <img id="room-image" />
+    <p id="room-description"></p>
+    <div id="power-effect"></div>
+    <button id="next-button">Continue</button>
+  </div>
 </body>
 </html>
