@@ -17,7 +17,18 @@
       selected = true;
       element.classList.add("selected");
       element.querySelector(".status").textContent = "You";
+      document.getElementById("power-display").innerHTML = powerText[name];
+      document.getElementById("power-section").style.display = "block";
     }
+
+    const powerText = {
+      "Mr. Todd": "<h2>Power: Unbreakable</h2><p>Once per game, survive a deadly encounter automatically.</p>",
+      "Anna": "<h2>Power: Deadly Charm</h2><p>Secretly force another player to lose a turn or misread a clue.</p>",
+      "Aaron": "<h2>Power: Quick Escape</h2><p>Twice per game, instantly exit a dangerous room before it triggers.</p>",
+      "Melanie": "<h2>Power: Heartlight</h2><p>Revive or shield a player from death once per game.</p>",
+      "Nate": "<h2>Power: Vibe Shield</h2><p>Immune to ghost fear effects while shield is active. 3 charges.</p>",
+      "James": "<h2>Power: Bonded with Conis</h2><p>Send Conis to protect or scout once. Also peek into a locked room.</p>"
+    };
   </script>
 </head>
 <body>
@@ -41,6 +52,10 @@
     <div class="character" id="James" onclick="selectCharacter('James')">
       <img src="james.jpg"><p>James</p><p class="status">Available</p>
     </div>
+  </div>
+
+  <div id="power-section" style="display:none; margin-top: 30px;">
+    <div id="power-display"></div>
   </div>
 </body>
 </html>
