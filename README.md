@@ -1,3 +1,9 @@
-# Love & Dread (Polished Version)
+# Love & Dread: Escape the Mansion (Final Version)
 
-This is the final, fully playable release of *Love & Dread: Escape the Mansion*.
+This build includes:
+- Character selection
+- Eerie portraits
+- Background music
+- Final survivor logic
+- Real-time syncing
+- Cinematic room transitions
