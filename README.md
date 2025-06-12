@@ -1,2 +1,2 @@
-# Love & Dread
-A horror-mystery board game played across screens.
+# Love & Dread Final Game
+This is the polished, working version of the game to be hosted on GitHub Pages.

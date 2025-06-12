@@ -1,1 +1,15 @@
-body { background: black; color: white; font-family: 'Georgia'; } .fade-text { animation: fadeIn 5s ease-in-out; }
+
+body {
+  background-color: black;
+  color: white;
+  font-family: Georgia, serif;
+  text-align: center;
+  padding-top: 20vh;
+}
+.fade-text {
+  animation: fadeIn 4s ease-in;
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
