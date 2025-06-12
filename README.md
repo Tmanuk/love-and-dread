@@ -1,2 +1,2 @@
-# Love & Dread Final Game
-This is the polished, working version of the game to be hosted on GitHub Pages.
+# Love & Dread: Full Polished Version
+This is the complete version with character selection and polished assets.

@@ -4,12 +4,25 @@ body {
   color: white;
   font-family: Georgia, serif;
   text-align: center;
-  padding-top: 20vh;
+}
+.screen {
+  margin-top: 10vh;
 }
 .fade-text {
-  animation: fadeIn 4s ease-in;
+  animation: fadeIn 5s ease-in;
 }
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
+}
+.character-card {
+  display: inline-block;
+  margin: 10px;
+  border: 2px solid white;
+  padding: 10px;
+}
+.character-card img {
+  width: 150px;
+  height: 150px;
+  display: block;
 }
